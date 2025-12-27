@@ -1,0 +1,356 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(
+        to top,
+        rgba(93, 56, 145, 0.04) 0%,
+        rgba(93, 56, 145, 0.241) 50%,
+        rgba(93, 56, 145, 0.497) 100%
+    );
+}
+
+
+/* Reset dasar agar tampilan rapi di semua browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gaya untuk Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+
+    background: linear-gradient(
+        to right,
+        rgb(110, 66, 172) 0%,
+        rgb(93, 56, 145) 50%,
+        rgb(58, 35, 90) 100%
+    );
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.195);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+/* INI KUNCI UNTUK MEMBUAT MENU BERSAMPINGAN */
+.nav-links {
+    display: flex;        /* Membuat elemen di dalamnya (li) bersampingan */
+    list-style: none;     /* Menghilangkan titik (bullet points) */
+}
+
+.nav-links li {
+    margin-left: 30px;    /* Memberikan jarak antar menu */
+}
+
+.nav-links a {
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    color: #F5F5F5;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F99417;       /* Warna berubah saat kursor diarahkan */
+}
+
+/* Gaya untuk Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    
+}
+
+.explore {
+    color: #5D3891;   /* ungu */
+    text-shadow: #222;
+    font-size: 69px;
+}
+
+.create {
+    color: #F99417;   /* oranye */
+    text-shadow: #222;
+    font-size: 69px;
+}
+
+.innovate {
+    color: #ffffff;   /* gelap / netral */
+    text-shadow: #222;
+    font-size: 69px;
+}
+
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.btn-primary {
+    padding: 12px 30px;
+    background-color: #F99417;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+.btn-primary:hover {
+    background-color: #d07f1d;
+    box-shadow: #222;
+}
+
+/* ===== About Section ===== */
+.about {
+    min-height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 10% 10px;
+    
+}
+
+.about-content {
+    display: flex;
+    align-items: center;     /* sejajar vertikal */
+    gap: 50px;               /* jarak gambar & teks */
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-content img {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.9;
+    text-align: left;
+}
+
+.hex {
+    color: #666;   /* gelap / netral */
+    text-shadow: #222;
+    font-size: 27px;
+}
+
+.ML {
+    color: #5D3891;   /* gelap / netral */
+    text-shadow: #222;
+    font-size: 30px;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #ffffff;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 10%;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* jarak logo & teks */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #F5F5F5;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;    /* anti gepeng */
+}
+
+.logo img:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+
+/* ===== Struktur Pimpinan Lab ===== */
+.lab-structure {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    margin-top: 60px;
+    flex-wrap: wrap; /* supaya responsif */
+}
+
+.person-card {
+    text-align: center;
+}
+
+.person-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;          /* BINGKAI BUNDAR */
+    object-fit: cover;
+    border: 5px solid #5D3891;   /* warna bingkai */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.person-card img:hover {
+    transform: scale(1.08);
+}
+
+.person-card h3 {
+    margin-bottom: 18px;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.person-card p {
+    margin-top: 6px;
+    margin-bottom: 50px;
+    font-size: 1rem;
+    color: #555;
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+    .navbar {
+        padding: 10px 6%;
+    }
+
+    .logo img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 5%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .btn-primary {
+        padding: 10px 24px;
+        font-size: 0.95rem;
+    }
+
+    .about {
+        padding: 40px 7%;
+    }
+
+    .about-content h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-content p {
+        font-size: 1rem;
+    }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.2rem;
+        gap: 8px;
+    }
+
+    .logo img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .hero p {
+        font-size: 0.95rem;
+    }
+
+    .nav-links {
+        font-size: 0.95rem;
+    }
+}
