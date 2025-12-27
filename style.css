@@ -14,7 +14,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Gaya untuk Navbar */
@@ -76,28 +76,62 @@ body {
     
 }
 
-.explore {
-    color: #5D3891;   /* ungu */
-    text-shadow: #222;
+/* ===== Welcome Text ===== */
+.wlc {
+    margin-bottom: 0px;   /* jarak ke slogan */
+}
+
+.wlc p {
+    /* margin-bottom: 0;
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #555;
+    line-height: 1.2; */
+    color: #ffffff66;
     font-size: 69px;
+    font-weight: 500;
+    text-shadow:
+        0 0 5px rgba(255, 255, 255, 0.486),
+        0 0 15px rgba(255, 255, 255, 0.419),
+        0 0 30px rgba(255, 255, 255, 0.4);
+}
+
+.wlc h1 {
+    margin: 2px 0 0 0;   /* INI KUNCI: rapatkan */
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #000000;
+    line-height: 1.2;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+
+.explore {
+    color: #5D3891;
+    font-size: 69px;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(93, 56, 145, 0.35);
 }
 
 .create {
-    color: #F99417;   /* oranye */
-    text-shadow: #222;
+    color: #F99417;
     font-size: 69px;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(249, 148, 23, 0.35);
 }
 
 .innovate {
-    color: #ffffff;   /* gelap / netral */
-    text-shadow: #222;
+    color: #ffffff;
     font-size: 69px;
+    font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
 }
 
 
-.hero h1 {
+.hero > h1 {
     font-size: 3.5rem;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 0px;
     color: #222;
 }
 
@@ -254,6 +288,116 @@ section {
     color: #555;
 }
 
+/* ================== Poppins ================ */
+
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
 
 
 /* ================= ABOUT SECTION LAYOUT ================= */
