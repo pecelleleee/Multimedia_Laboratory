@@ -159,19 +159,20 @@ body {
     font-size: 1.1rem;
     color: #444;
     line-height: 1.9;
-    text-align: left;
+    text-align: justify;
+    margin-top: 10px;
 }
 
 .hex {
     color: #666;   /* gelap / netral */
     text-shadow: #222;
-    font-size: 27px;
+    font-size: 35px;
 }
 
 .ML {
     color: #5D3891;   /* gelap / netral */
     text-shadow: #222;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 /* ===== Footer ===== */
@@ -255,6 +256,28 @@ section {
 
 
 
+/* ================= ABOUT SECTION LAYOUT ================= */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-content img {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+    filter: drop-shadow(0 8px 15px rgba(0, 0, 0, 0.15));
+}
+
+.about-text {
+    flex: 1;
+}
+
 /* ================= RESPONSIVE ================= */
 
 /* Tablet */
@@ -274,6 +297,14 @@ section {
 
     .hero p {
         font-size: 1.1rem;
+    }
+
+    .about-content {
+        gap: 35px;
+    }
+
+    .about-content img {
+        width: 180px;
     }
 }
 
@@ -321,6 +352,20 @@ section {
         padding: 40px 7%;
     }
 
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .about-content img {
+        width: 160px;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+
     .about-content h1 {
         font-size: 2.2rem;
     }
@@ -352,5 +397,9 @@ section {
 
     .nav-links {
         font-size: 0.95rem;
+    }
+
+    .about-content img {
+        width: 130px;
     }
 }
