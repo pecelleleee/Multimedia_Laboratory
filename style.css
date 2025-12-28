@@ -83,6 +83,13 @@ body {
 }
 
 .hero::before {
+    min-height: 50vh; 
+    background: 
+    linear-gradient( 
+        to top, 
+        rgba(93, 56, 145, 0.04) 0%, 
+        rgba(93, 56, 145, 0.521) 100% ); 
+
     content: "";
     position: absolute;
     top: 0;
@@ -91,7 +98,7 @@ body {
     height: 100%;
     background: 
         linear-gradient(to bottom, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 100%),
-        url('asset/home.png') center/cover no-repeat;
+        url('asset/home2.png') center/cover no-repeat;
 
     background-size: cover; /* tetap memenuhi section */
     filter: blur(1px);    /* efek blur */
@@ -161,7 +168,7 @@ body {
 
 .hero p {
     font-size: 1.2rem;
-    color: #666;
+    color: #2a2a2a;
     max-width: 600px;
     margin-bottom: 30px;
 }
