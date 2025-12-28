@@ -98,7 +98,7 @@ body {
     height: 100%;
     background: 
         linear-gradient(to bottom, rgba(255,255,255,0) 70%, rgba(255,255,255,1) 100%),
-        url('asset/home2.png') center/cover no-repeat;
+        url('asset/home.png') center/cover no-repeat;
 
     background-size: cover; /* tetap memenuhi section */
     filter: blur(1px);    /* efek blur */
