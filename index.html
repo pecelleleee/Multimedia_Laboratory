@@ -12,6 +12,8 @@
         rel="stylesheet"
     >
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -21,13 +23,15 @@
         <div class="logo">
             <img src="asset/MULTIMEDIA.png" alt="Logo Multimedia Laboratory">
         </div>
-
-        <ul class="nav-links poppins-medium">
+        <div class="menu-toggle" id="menuToggle">☰</div>
+        <ul class="nav-links poppins-medium" id="navMenu">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="projects.html">Our Project</a></li>
-            <li><a href="members.html">Assistants</a></li>
+            <li><a href="#project">Our Project</a></li>
+            <li><a href="#members">Assistants</a></li>
         </ul>
+        
+
     </nav>
 
     <!-- Home Section -->
@@ -48,7 +52,7 @@
             Grafika Komputer, dan Sistem Multimedia.
         </p>
 
-        <a href="projects.html" class="btn-primary">
+        <a href="#project" class="btn-primary" >
             Explore Our Works
         </a>
     </section>
@@ -151,6 +155,55 @@
             </div>
         </div>
     </section>
+
+<section class="projects poppins-medium" id="project">
+    <h2>Our Projects</h2>
+    <p class="project-desc">
+        Kumpulan karya mahasiswa Lab Multimedia dari berbagai bidang.
+    </p>
+
+    <div class="project-grid">
+
+        <div class="project-card uiux">
+            <img src="asset/prj/figmaprj.png" alt="UI UX Project">
+            <div class="project-info">
+                <h3>Mobile App UI Design</h3>
+
+                <div class="project-meta">
+                    <span class="tag">UI/UX • Figma</span>
+                    <a href="ProjectDetail.html" class="project-link">Lihat Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card grafkom">
+            <img src="asset/prj/blenderprj.png" alt="Grafkom Project">
+            <div class="project-info">
+                <h3>3D Animation</h3>
+
+                <div class="project-meta">
+                    <span class="tag">Grafkom • Blender</span>
+                    <a href="ProjectDetail.html" class="project-link">Lihat Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card sismul">
+            <img src="asset/prj/unityprj.png" alt="Sismul Project">
+            <div class="project-info">
+                <h3>Game Edukasi</h3>
+
+                <div class="project-meta">
+                    <span class="tag">Sismul • Unity</span>
+                    <a href="ProjectDetail.html" class="project-link">Lihat Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
 
     <!-- Footer -->
     <footer class="footer poppins-medium">
