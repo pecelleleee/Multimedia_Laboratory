@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimedia Laboratory</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+    >
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -17,7 +22,7 @@
             <img src="asset/MULTIMEDIA.png" alt="Logo Multimedia Laboratory">
         </div>
 
-        <ul class="nav-links poppins-medium" >
+        <ul class="nav-links poppins-medium">
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="projects.html">Our Project</a></li>
@@ -26,11 +31,12 @@
     </nav>
 
     <!-- Home Section -->
-    <section class="hero" id="home">
+    <section class="hero poppins-medium" id="home">
         <div class="wlc">
             <p>Welcome to</p>
             <h1>Multimedia Laboratory</h1>
         </div>
+
         <h1>
             <span class="explore">Explore,</span>
             <span class="create">Create,</span>
@@ -48,9 +54,10 @@
     </section>
 
     <!-- About Section -->
-    <section class="about" id="about">
+    <section class="about poppins-medium" id="about">
         <div class="about-content">
             <img src="asset/MULTIMEDIA.png" alt="Logo Multimedia Laboratory">
+
             <div class="about-text">
                 <h1>
                     <span class="hex">About </span>
@@ -69,98 +76,84 @@
         </div>
     </section>
 
-    <div class="about-activities">
-        <span class="kgtn-act">Kegiatannya</span> 
+    <!-- Activities -->
+    <section class="about-activities poppins-medium">
+        <span class="kgtn-act">Kegiatannya</span>
         <span class="ngp-act">ngapain aja sih?</span>
-    <ul>
-        <li class="activity-item">
-            <img src="asset/praktik.jpeg" alt="Praktikum">
-            <div class="activity-text">
-                <h3>Praktikum</h3>
+
+        <ul>
+            <li class="activity-item">
+                <img src="asset/praktik.jpeg" alt="Praktikum">
+                <div class="activity-text">
+                    <h3>Praktikum</h3>
+                    <p>
+                        Kegiatan pembelajaran berbasis praktik untuk meningkatkan
+                        pemahaman mahasiswa dalam bidang UI/UX, grafika komputer,
+                        dan multimedia interaktif.
+                    </p>
+                </div>
+            </li>
+
+            <li class="activity-item">
+                <img src="asset/pelatihan.jpg" alt="Pelatihan & Workshop">
+                <div class="activity-text">
+                    <h3>Pelatihan & Workshop</h3>
+                    <p>
+                        Program pelatihan dan workshop yang bertujuan meningkatkan
+                        skill teknis dan kreativitas mahasiswa sesuai kebutuhan industri.
+                    </p>
+                </div>
+            </li>
+
+            <li class="activity-item">
+                <img src="asset/kolab.jpeg" alt="Kolaborasi">
+                <div class="activity-text">
+                    <h3>Kolaborasi</h3>
+                    <p>
+                        Kerja sama dengan internal kampus maupun pihak eksternal
+                        dalam pengembangan proyek kreatif dan riset multimedia.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses poppins-medium">
+        <h2 class="course-title">Mata Kuliah yang Diampu</h2>
+
+        <div class="course-list">
+            <div class="course-card uiux">
+                <h3>UI/UX Design</h3>
+                <span class="software">Software: Figma</span>
                 <p>
-                    Kegiatan pembelajaran berbasis praktik untuk meningkatkan
-                    pemahaman mahasiswa dalam bidang UI/UX, grafika komputer,
-                    dan multimedia interaktif.
+                    Mata kuliah ini membahas perancangan antarmuka dan pengalaman pengguna
+                    pada aplikasi digital dengan pendekatan user-centered design.
                 </p>
             </div>
-        </li>
 
-        <li class="activity-item">
-            <img src="asset/pelatihan.jpg" alt="Pelatihan & Workshop">
-            <div class="activity-text">
-                <h3>Pelatihan & Workshop</h3>
+            <div class="course-card grafkom">
+                <h3>Grafika Komputer & Animasi</h3>
+                <span class="software">Software: Blender</span>
                 <p>
-                    Program pelatihan dan workshop yang bertujuan meningkatkan
-                    skill teknis dan kreativitas mahasiswa sesuai kebutuhan industri.
+                    Mempelajari konsep grafika komputer dua dan tiga dimensi serta teknik
+                    animasi digital untuk kebutuhan visual dan multimedia.
                 </p>
             </div>
-        </li>
 
-        <li class="activity-item">
-            <img src="asset/kolab.jpeg" alt="Kolaborasi">
-            <div class="activity-text">
-                <h3>Kolaborasi</h3>
+            <div class="course-card sismul">
+                <h3>Sistem Multimedia</h3>
+                <span class="software">Software: Unity</span>
                 <p>
-                    Kerja sama dengan internal kampus maupun pihak eksternal
-                    dalam pengembangan proyek kreatif dan riset multimedia.
+                    Fokus pada integrasi teks, audio, video, dan animasi dalam sebuah sistem
+                    multimedia interaktif berbasis komputer.
                 </p>
             </div>
-        </li>
-    </ul>
-</div>
-<section class="courses">
-    <h2 class="course-title">Mata Kuliah yang Diampu</h2>
-
-    <div class="course-list">
-        <div class="course-card uiux">
-            <h3>UI/UX Design</h3>
-            <span class="software">Software: Figma</span>
-            <p>
-                Mata kuliah ini membahas perancangan antarmuka dan pengalaman pengguna
-                pada aplikasi digital dengan pendekatan user-centered design.
-            </p>
         </div>
-
-        <div class="course-card grafkom">
-            <h3>Grafika Komputer & Animasi</h3>
-            <span class="software">Software: Blender</span>
-            <p>
-                Mempelajari konsep grafika komputer dua dan tiga dimensi serta teknik
-                animasi digital untuk kebutuhan visual dan multimedia.
-            </p>
-        </div>
-
-        <div class="course-card sismul">
-            <h3>Sistem Multimedia</h3>
-            <span class="software">Software: Unity</span>
-            <p>
-                Fokus pada integrasi teks, audio, video, dan animasi dalam sebuah sistem
-                multimedia interaktif berbasis komputer.
-            </p>
-        </div>
-    </div>
-</section>
-
-
-
-
-    <!-- Struktur Pimpinan Lab -->
-    <!-- <div class="lab-structure">
-        <div class="person-card">
-            <h3>Kepala Laboratorium</h3>
-            <img src="asset/4.png" alt="Kepala Laboratorium">
-            <p>Yasni Djamain, S.Kom., M.Kom</p>
-        </div>
-
-        <div class="person-card">
-            <h3>Koordinator Laboratorium</h3>
-            <img src="asset/3.png" alt="Koordinator Laboratorium">
-            <p>Lily Fitry Hasanah</p>
-        </div>
-    </div> -->
+    </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer poppins-medium">
         <p>© 2025 Multimedia Laboratory ITPLN. All Rights Reserved.</p>
     </footer>
 
