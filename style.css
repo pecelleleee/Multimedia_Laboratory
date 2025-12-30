@@ -231,10 +231,6 @@ body {
 
 .wlc p {
     margin-bottom: 0;
-    /*font-size: 1.1rem;
-    font-weight: 400;
-    color: #555;
-    line-height: 1.2; */
     color: #ffffff66;
     font-size: 69px;
     font-weight: 500;
@@ -456,17 +452,6 @@ body {
 .about-activities li strong {
     color: #F99417;
     font-size: 1.05rem;
-}
-
-
-/* ===== Footer ===== */
-.footer {
-    background-color: #ffffff;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px 10%;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #555;
 }
 
 html {
@@ -758,6 +743,214 @@ section {
     flex: 1;
 }
 
+/* ============= ASSISTANT SECTION ============= */
+
+.assistants {
+    text-align: center;
+    padding: 90px 8%;
+    background: 
+    linear-gradient( 
+        to bottom, 
+        rgba(93, 56, 145, 0) 0%, 
+        rgba(93, 56, 145, 0.521) 100% );
+}
+
+.assistants h2 {
+    font-size: 2.2rem;
+    color: #5d3891;
+}
+
+.assistants .assistant-desc {
+    margin-top: 10px;
+    color: #555;
+    font-size: 1rem;
+}
+
+/* GRID 3 KOLOM */
+.assistant-year-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 50px auto 0;
+}
+
+/* CARD ANGKATAN */
+.year-card {
+    position: relative;
+    padding: 55px 30px;
+    border-radius: 22px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+
+    background: linear-gradient(
+        135deg,
+        rgba(101, 61, 157, 0.95),
+        rgba(48, 29, 74, 0.95)
+    );
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.282);
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+/* BACKGROUND FOTO TRANSPARAN */
+.year-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    opacity: 0.18;          /* foto samar */
+    z-index: 0;
+}
+
+/* FOTO TIAP ANGKATAN */
+.year-card.angkatan-22::before {
+    background-image: url("asset/akt/22.png");
+}
+
+.year-card.angkatan-23::before {
+    background-image: url("asset/akt/23.png");
+}
+
+.year-card.angkatan-24::before {
+    background-image: url("asset/akt/24.png");
+}
+
+/* ISI DI ATAS FOTO */
+.year-card h3,
+.year-card span {
+    position: relative;
+    z-index: 1;
+}
+
+.year-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+}
+
+.year-card span {
+    font-size: 0.95rem;
+    color: #f99417;
+    font-weight: 500;
+}
+
+/* HOVER */
+.year-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.35);
+}
+
+.year-card:hover::before {
+    opacity: 0.10;
+}
+
+/* ======================== FOOTER ===================== */
+.footer {
+    background: linear-gradient(180deg, #5d3891, #341f51);
+    color: #fff;
+    padding: 45px 8% 30px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    margin-bottom: 14px;
+}
+
+.footer-desc {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.social-links {
+    display: flex;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.social-links a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.social-links a img {
+    width: 22px;
+    height: 22px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.social-links a:hover {
+    background: #f99417;
+    transform: translateY(-3px);
+}
+
+.social-links a:hover img {
+    filter: brightness(0) invert(1); /* logo jadi putih */
+}
+
+
+.quick-links,
+.contact-info {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-links li,
+.contact-info li {
+    margin-bottom: 10px;
+}
+
+.quick-links a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.quick-links a:hover {
+    color: #f99417;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.footer-bottom a {
+    color: #ffffff;          /* font putih */
+    text-decoration: none;   /* hilangkan garis bawah */
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: #f99417;          /* opsional: oren saat hover */
+}
+
+
 /* ================Responsive=========== */
 
 /* ================= TABLET / IPAD ================= */
@@ -823,11 +1016,6 @@ section {
         text-align: justify;
     }
 
-    /* Struktur Lab */
-    /* .lab-structure {
-        gap: 80px;
-    } */
-
     .course-list {
         grid-template-columns: repeat(2, 1fr); /* ⬅️ 2 kolom */
     }
@@ -867,7 +1055,7 @@ section {
         top: 60px; /* ⬅️ tepat di bawah navbar */
         left: 0;
         width: 100%;
-        min-height: calc(40vh - 60px);
+        min-height: calc(55vh - 60px);
 
         background: linear-gradient(
             to bottom,
@@ -995,9 +1183,37 @@ section {
     .project-info h3 {
         font-size: 1.1rem;
     }
+
+    /* ===========assistant=========== */
+
+    .assistant-year-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .year-card {
+        padding: 45px 25px;
+    }
+
+
+    /* ===============Footer============= */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: left;
+    }
+
+    /* QUICK LINKS SAJA RATA KIRI */
+    .quick-links {
+        text-align: left;
+    }
+
+    .quick-links li {
+        text-align: left;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+
 }
-
-
-
-
-
