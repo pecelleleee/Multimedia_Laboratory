@@ -17,3 +17,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+// const slider = document.getElementById("assistantSlider");
+// const btnNext = document.getElementById("slideNext");
+// const btnPrev = document.getElementById("slidePrev");
+
+// function getCardWidth() {
+//     return slider.offsetWidth;
+// }
+
+// btnNext.addEventListener("click", () => {
+//     slider.scrollBy({
+//         left: getCardWidth(),
+//         behavior: "smooth"
+//     });
+// });
+
+// btnPrev.addEventListener("click", () => {
+//     slider.scrollBy({
+//         left: -getCardWidth(),
+//         behavior: "smooth"
+//     });
+// });
+

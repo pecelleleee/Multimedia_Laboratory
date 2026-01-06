@@ -191,25 +191,146 @@
 }
 
 /* ==========main content========== */
-
-.main-content {
-    padding-top: 80px;     /* ngalah ke navbar fixed */
-    min-height: 100vh;     /* BIKIN FOOTER KE BAWAH */
-    background: 
-    linear-gradient( 
-        to bottom, 
+/* ============ SECTION ASISTEN ============ */
+.assistant-section {
+    padding: 120px 8% 80px; /* ⬅️ JARAK DARI NAVBAR */
+    background: #ffffff;
+    min-height: 100vh;
+    background:
+    linear-gradient(
+        to bottom,
         rgba(93, 56, 145, 0) 0%, 
-        rgba(93, 56, 145, 0.521) 100% );
+        rgba(93, 56, 145, 0) 0%,
+        rgba(93, 56, 145, 0.521) 100% 
+    );
 }
 
-.assistants {
-    padding: 60px 8%;
-}
-
-.assistants h1 {
+.assistant-title {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 90px 0 20px;
+    background: linear-gradient(
+        to top,
+        rgba(93, 56, 145, 0) 0%, 
+        rgba(93, 56, 145, 0.521) 100%
+    );
 }
+
+.assistant-title h2 {
+    font-size: 4rem;
+    color: #3a235a;
+    margin-bottom: 0px;
+}
+
+.angkatan {
+    font-size: 2rem;
+}
+
+.aktass {
+    color: #F99417;
+}
+
+.aktnoass {
+    color: #F99417;
+    margin-left: 6px;
+}
+
+
+/* GRID CARD */
+.assistant-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 32px;
+    justify-items: center;
+}
+
+
+/* ============ CARD ASISTEN ============ */
+.assistant-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 22px;
+    overflow: hidden;
+
+    max-width: 340px;   /* ⬅️ LEBIH GEDE */
+    width: 100%;
+
+    box-shadow: 0 14px 35px rgba(0,0,0,0.14);
+    transition: transform 0.3s ease;
+}
+
+.assistant-card:hover {
+    transform: translateY(-6px);
+}
+
+/* ============ GAMBAR STYLE PROJECT ============ */
+.assistant-image {
+    width: 100%;
+    height: 230px; /* ⬅️ FOTO LEBIH TINGGI */
+    overflow: hidden;
+}
+
+.assistant-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ============ INFO ============ */
+.assistant-info {
+    padding: 30px 20px 36px; /* ⬅️ BIKIN CARD LEBIH PANJANG */
+    text-align: left;
+}
+
+.assistant-info h3{
+    font-size: 20px;
+}
+
+.assistant-name {
+    font-size: 1.1rem;
+    color: #3a235adc;
+    margin-bottom: 6px;
+}
+
+.assistant-nim {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ============ SOSMED ============ */
+.assistant-social {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+}
+
+.assistant-social a {
+    width: 34px;
+    height: 34px;
+    background: #f7f6f6;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    backdrop-filter: blur(4px);
+    transition: background 0.3s ease;
+}
+
+.assistant-social a:hover {
+    background: #f99417;
+}
+
+.assistant-social img {
+    width: 18px;
+    height: 18px;
+}
+
+
+
 
 
 /* ======================== FOOTER ===================== */
@@ -332,7 +453,14 @@
         width: 100%;
         height: 60px;
         z-index: 1000;
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
+
+    .navbar .logo img {
+    height: 50px;         /* ⬅️ jangan terlalu gede */
+    display: block;
+}
 
     /* ===== NAV LINKS (DROPDOWN DARI BAWAH NAVBAR) ===== */
   
@@ -380,6 +508,27 @@
         text-decoration: none;
     }
 
+    .assistant-title {
+        padding: 70px 16px 20px;
+    }
+
+    .assistant-title h2 {
+        font-size: 2.2rem;        /* ⬅️ diperkecil */
+        line-height: 1.2;
+        white-space: normal;
+    }
+
+    .angkatan {
+        font-size: 1.3rem;
+    }
+
+    /* ===========asisten========== */
+    .assistant-image img {
+        object-position: center -100px; /* ⬅️ GAMBAR TURUN DIKIT */
+    }
+
+    
+
     /* ===============Footer============= */
     .footer-container {
         grid-template-columns: 1fr;
@@ -400,4 +549,4 @@
         gap: 8px;
         text-align: center;
     }
-  }
+}

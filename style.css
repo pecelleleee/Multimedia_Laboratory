@@ -1047,7 +1047,14 @@ section {
         width: 100%;
         height: 60px;
         z-index: 1000;
+        padding-top: 6px;
+        padding-bottom: 6px;
     }
+
+    .navbar .logo img {
+    height: 50px;         /* ⬅️ jangan terlalu gede */
+    display: block;
+}
 
     /* ===== NAV LINKS (DROPDOWN DARI BAWAH NAVBAR) ===== */
     .nav-links {
