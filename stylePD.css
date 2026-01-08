@@ -258,6 +258,7 @@
     height: 22px;
     opacity: 0.9;
     transition: all 0.3s ease;
+    filter: brightness(0) invert(1); /* icon putih */
 }
 
 /* HOVER EFFECT */
@@ -313,6 +314,26 @@
     color: #f99417;          /* opsional: oren saat hover */
 }
 
+/* ===== CONTACT INFO ===== */
+.contact-info li {
+    display: flex;
+    align-items: flex-start;     /* sejajar rapi dengan teks */
+    gap: 12px;
+
+    line-height: 1.5;
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+/* ukuran icon */
+.contact-info li img {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;            /* ⬅️ biar sejajar dengan teks */
+    flex-shrink: 0;             /* icon tidak mengecil */
+    filter: brightness(0) invert(1); /* icon putih */
+}
+
 
 /* =============responsive============ */
 @media (max-width: 767px) {
@@ -322,6 +343,11 @@
         font-size: 28px;
         cursor: pointer;
         z-index: 1100;
+    }
+
+    .navbar .logo img {
+    height: 50px;         /* ⬅️ jangan terlalu gede */
+    display: block;
     }
 
     /* ===== NAVBAR ===== */

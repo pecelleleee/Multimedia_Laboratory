@@ -18,25 +18,29 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// const slider = document.getElementById("assistantSlider");
-// const btnNext = document.getElementById("slideNext");
-// const btnPrev = document.getElementById("slidePrev");
 
-// function getCardWidth() {
-//     return slider.offsetWidth;
-// }
+document.addEventListener("DOMContentLoaded", () => {
+    const grid = document.querySelector(".assistant-grid");
+    const cards = document.querySelectorAll(".assistant-card");
+    const dotsContainer = document.getElementById("assistantDots");
 
-// btnNext.addEventListener("click", () => {
-//     slider.scrollBy({
-//         left: getCardWidth(),
-//         behavior: "smooth"
-//     });
-// });
+    // bikin dot
+    cards.forEach((_, i) => {
+        const dot = document.createElement("span");
+        if (i === 0) dot.classList.add("active");
+        dotsContainer.appendChild(dot);
+    });
 
-// btnPrev.addEventListener("click", () => {
-//     slider.scrollBy({
-//         left: -getCardWidth(),
-//         behavior: "smooth"
-//     });
-// });
+    const dots = dotsContainer.querySelectorAll("span");
+
+    grid.addEventListener("scroll", () => {
+        const cardWidth = cards[0].offsetWidth;
+        const index = Math.round(grid.scrollLeft / cardWidth);
+
+        dots.forEach(dot => dot.classList.remove("active"));
+        if (dots[index]) dots[index].classList.add("active");
+    });
+});
+
+
 

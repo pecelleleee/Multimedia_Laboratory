@@ -207,7 +207,7 @@
 
 .assistant-title {
     text-align: center;
-    padding: 90px 0 20px;
+    padding: 90px 0 0px;
     background: linear-gradient(
         to top,
         rgba(93, 56, 145, 0) 0%, 
@@ -254,12 +254,14 @@
     max-width: 340px;   /* ⬅️ LEBIH GEDE */
     width: 100%;
 
-    box-shadow: 0 14px 35px rgba(0,0,0,0.14);
+    
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.326);
     transition: transform 0.3s ease;
 }
 
 .assistant-card:hover {
     transform: translateY(-6px);
+    
 }
 
 /* ============ GAMBAR STYLE PROJECT ============ */
@@ -379,6 +381,7 @@
     height: 22px;
     opacity: 0.9;
     transition: all 0.3s ease;
+    filter: brightness(0) invert(1); /* icon putih */
 }
 
 /* HOVER EFFECT */
@@ -432,6 +435,26 @@
 
 .footer-bottom a:hover {
     color: #f99417;          /* opsional: oren saat hover */
+}
+
+/* ===== CONTACT INFO ===== */
+.contact-info li {
+    display: flex;
+    align-items: flex-start;     /* sejajar rapi dengan teks */
+    gap: 12px;
+
+    line-height: 1.5;
+    font-size: 0.95rem;
+    opacity: 0.95;
+}
+
+/* ukuran icon */
+.contact-info li img {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;            /* ⬅️ biar sejajar dengan teks */
+    flex-shrink: 0;             /* icon tidak mengecil */
+    filter: brightness(0) invert(1); /* icon putih */
 }
 
 
@@ -508,24 +531,118 @@
         text-decoration: none;
     }
 
-    .assistant-title {
-        padding: 70px 16px 20px;
-    }
+    /* ===== ASSISTANT TITLE - MOBILE ===== */
+.assistant-title {
+    padding: 90px 16px 0px;   /* ⬅️ jarak bawah DIPERKECIL */
+    text-align: center;
+}
 
-    .assistant-title h2 {
-        font-size: 2.2rem;        /* ⬅️ diperkecil */
-        line-height: 1.2;
-        white-space: normal;
-    }
+/* ANGKATAN PINDAH KE ATAS */
+.assistant-title {
+    gap: 3px;
+}
 
-    .angkatan {
-        font-size: 1.3rem;
-    }
+/* JUDUL */
+.assistant-title h2 {
+    font-size: 1.8rem;       /* ⬅️ lebih kecil */
+    line-height: 1.2;
+    margin: 0;
+    white-space: normal;     /* ⬅️ paksa 1 baris */
+}
+
+/* ANGKATAN */
+.angkatan {
+    font-size: 1rem;       /* ⬅️ LEBIH GEDE */
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.assistant-section {
+    padding: 30px 8% 80px; /* ⬅️ JARAK DARI NAVBAR */
+    background: #ffffff;
+    min-height: 100vh;
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(93, 56, 145, 0) 0%, 
+        rgba(93, 56, 145, 0) 0%,
+        rgba(93, 56, 145, 0.521) 100% 
+    );
+}
 
     /* ===========asisten========== */
     .assistant-image img {
         object-position: center -100px; /* ⬅️ GAMBAR TURUN DIKIT */
     }
+
+    /* ===========asisten slder============ */
+    /* =========== ASSISTANT SLIDER MOBILE =========== */
+
+.assistant-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;                      /* jarak antar card */
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    padding: 24px 16px;             /* ruang buat shadow */
+    scrollbar-width: none;
+}
+
+
+
+
+.assistant-grid::-webkit-scrollbar {
+    display: none;
+}
+
+/* CARD */
+.assistant-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+    scroll-snap-align: center;
+
+    background: #fff;
+    border-radius: 28px;
+
+    /* box-shadow: 0 18px 40px rgba(0,0,0,0.25); */
+
+    
+    box-sizing: border-box;
+}
+/* ========indikator dots========== */
+/* GAMBAR DI MOBILE */
+.assistant-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center -55px;
+}
+
+.assistant-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.assistant-dots span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #5d3891e7;
+    transition: all 0.3s ease;
+}
+
+.assistant-dots span.active {
+    width: 18px;
+    border-radius: 8px;
+    background: #f99417;
+}
+
+
 
     
 
